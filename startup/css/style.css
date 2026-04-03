@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap");
+
+@import url("components/container.css");
+@import url("components/avatar.css");
+@import url("components/button.css");
+@import url("components/banner.css");
+@import url("components/card.css");
+
+/* ── Base ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  background-color: #060618;
+  color: #c8d6f0;
+}
+
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ── Navbar ── */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: rgba(6, 6, 24, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(100, 150, 255, 0.15);
+  padding: 16px 0;
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links a {
+  color: #8aa0c8;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+.nav-live {
+  color: #e8470a !important;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* ── Section titles ── */
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  color: white;
+  margin-bottom: 48px;
+  letter-spacing: 3px;
+  position: relative;
+}
+
+
+/* ── Launches section ── */
+.launches {
+  padding: 80px 0;
+}
+
+.launch-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.launch-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(100, 150, 255, 0.12);
+  border-radius: 12px;
+  padding: 20px 28px;
+}
+
+.launch-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 56px;
+  background: rgba(232, 71, 10, 0.15);
+  border: 1px solid rgba(232, 71, 10, 0.4);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.launch-date .day {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+  color: #e8470a;
+  line-height: 1;
+}
+
+.launch-date .month {
+  font-size: 11px;
+  color: #8aa0c8;
+  letter-spacing: 1px;
+  margin-top: 2px;
+}
+
+.launch-info {
+  flex-grow: 1;
+}
+
+.launch-info h3 {
+  font-size: 16px;
+  color: white;
+  margin: 0 0 4px 0;
+  letter-spacing: 1px;
+}
+
+.launch-info p {
+  font-size: 13px;
+  color: #6a80a8;
+  margin: 0;
+}
+
+.launch-status {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.launch-status.confirmed {
+  background: rgba(30, 200, 100, 0.15);
+  color: #1ec864;
+  border: 1px solid rgba(30, 200, 100, 0.3);
+}
+
+.launch-status.tbd {
+  background: rgba(255, 180, 0, 0.12);
+  color: #ffb400;
+  border: 1px solid rgba(255, 180, 0, 0.3);
+}
+
+/* ── Rockets section ── */
+.rockets {
+  padding: 80px 0;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* ── Facts section ── */
+.facts {
+  padding: 80px 0;
+}
+
+.facts-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.fact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-basis: 200px;
+  flex-grow: 1;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(100, 150, 255, 0.12);
+  border-radius: 12px;
+  padding: 32px 20px;
+}
+
+.fact-number {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+  color: #e8470a;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.fact-label {
+  font-size: 13px;
+  color: #6a80a8;
+}
+
+/* ── Newsletter / Typeform ── */
+.newsletter {
+  padding: 80px 0;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.newsletter-subtitle {
+  text-align: center;
+  color: #6a80a8;
+  font-size: 16px;
+  margin: -32px 0 40px;
+}
+
+.typeform-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: 16px;
+  border: 1px solid rgba(100, 150, 255, 0.12);
+  min-height: 400px;
+}
+
+/* ── Footer ── */
+.footer {
+  background: rgba(0, 0, 0, 0.4);
+  border-top: 1px solid rgba(100, 150, 255, 0.1);
+  padding: 24px 0;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 13px;
+  color: #3a4a6a;
+  margin: 0;
+}

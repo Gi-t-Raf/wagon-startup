@@ -1,0 +1,59 @@
+/* ── Hero / Banner ── */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: #0a0a2e;
+  overflow: hidden;
+  padding-top: 72px;
+}
+
+.hero-stars {
+  display: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: rgba(232, 71, 10, 0.15);
+  border: 1px solid rgba(232, 71, 10, 0.4);
+  color: #ff8c42;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  margin-bottom: 28px;
+}
+
+.hero-content h1 {
+  font-size: 64px;
+  color: white;
+  margin: 0 0 16px 0;
+  letter-spacing: 4px;
+}
+
+.hero-content h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: #8aa0c8;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}

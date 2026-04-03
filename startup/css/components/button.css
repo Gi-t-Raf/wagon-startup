@@ -1,0 +1,31 @@
+.btn-primary {
+  background: #e8470a;
+  padding: 14px 32px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+
+.btn-secondary {
+  background: transparent;
+  padding: 14px 32px;
+  border-radius: 8px;
+  color: #8aa0c8;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  border: 1px solid rgba(100, 150, 255, 0.3);
+}
+
+.btn-blue {
+  background: #e8470a;
+  padding: 14px 32px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+}
