@@ -1,0 +1,102 @@
+/* ── Hero / Banner ── */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: radial-gradient(ellipse at 20% 50%, #1a0a3e 0%, #0a0a2e 40%, #060618 100%);
+  overflow: hidden;
+  padding-top: 72px;
+}
+
+/* Starfield */
+.hero-stars {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(1px 1px at 5% 10%, rgba(255,255,255,0.9), transparent),
+    radial-gradient(1px 1px at 12% 35%, rgba(255,255,255,0.7), transparent),
+    radial-gradient(1.5px 1.5px at 20% 60%, rgba(255,255,255,0.8), transparent),
+    radial-gradient(1px 1px at 28% 15%, rgba(255,255,255,0.6), transparent),
+    radial-gradient(1px 1px at 35% 80%, rgba(255,255,255,0.9), transparent),
+    radial-gradient(2px 2px at 42% 45%, rgba(255,255,255,0.5), transparent),
+    radial-gradient(1px 1px at 50% 25%, rgba(255,255,255,0.8), transparent),
+    radial-gradient(1px 1px at 58% 70%, rgba(255,255,255,0.7), transparent),
+    radial-gradient(1.5px 1.5px at 65% 5%, rgba(255,255,255,0.9), transparent),
+    radial-gradient(1px 1px at 72% 55%, rgba(255,255,255,0.6), transparent),
+    radial-gradient(1px 1px at 80% 30%, rgba(255,255,255,0.8), transparent),
+    radial-gradient(2px 2px at 88% 85%, rgba(255,255,255,0.5), transparent),
+    radial-gradient(1px 1px at 93% 15%, rgba(255,255,255,0.9), transparent),
+    radial-gradient(1px 1px at 97% 50%, rgba(255,255,255,0.7), transparent),
+    radial-gradient(1px 1px at 15% 90%, rgba(255,255,255,0.6), transparent),
+    radial-gradient(1.5px 1.5px at 45% 92%, rgba(255,255,255,0.8), transparent),
+    radial-gradient(1px 1px at 75% 95%, rgba(255,255,255,0.7), transparent),
+    radial-gradient(1px 1px at 3% 55%, rgba(200,220,255,0.8), transparent),
+    radial-gradient(1.5px 1.5px at 60% 40%, rgba(200,220,255,0.6), transparent),
+    radial-gradient(1px 1px at 90% 65%, rgba(200,220,255,0.9), transparent);
+  animation: twinkle 8s ease-in-out infinite alternate;
+}
+
+@keyframes twinkle {
+  0% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+
+/* Glow planet/nebula effect */
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(232, 71, 10, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: rgba(232, 71, 10, 0.15);
+  border: 1px solid rgba(232, 71, 10, 0.4);
+  color: #ff8c42;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  margin-bottom: 28px;
+}
+
+.hero-content h1 {
+  font-size: 64px;
+  color: white;
+  margin: 0 0 16px 0;
+  letter-spacing: 4px;
+  text-shadow: 0 0 40px rgba(100, 150, 255, 0.4);
+}
+
+.hero-content h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: #8aa0c8;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
